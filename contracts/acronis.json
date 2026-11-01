@@ -1,0 +1,76 @@
+{
+  "source": "https://developer.acronis.com/doc/alerts/v1/reference/openapi.json",
+  "retrieved": "2026-11-01",
+  "sha256": "540eec169663a2f12e079311f0dfeafe6ee3a76f1abc784ca2da6186d4393329",
+  "create": {
+    "method": "POST",
+    "path": "/alerts",
+    "required": [
+      "details",
+      "type"
+    ],
+    "properties": {
+      "_sourceTimeStamp": {
+        "type": "integer",
+        "format": "int64"
+      },
+      "_source": {
+        "type": "string"
+      },
+      "context": {
+        "$ref": "#/components/schemas/Context"
+      },
+      "createdAt": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "id": {
+        "$ref": "#/components/schemas/uuid"
+      },
+      "details": {
+        "type": "object"
+      },
+      "tenantID": {
+        "type": "string"
+      },
+      "severity": {
+        "enum": [
+          "ok",
+          "information",
+          "warning",
+          "error",
+          "critical"
+        ],
+        "type": "string"
+      },
+      "type": {
+        "type": "string"
+      },
+      "affinity": {
+        "type": "string"
+      }
+    }
+  },
+  "dismiss": {
+    "method": "DELETE",
+    "path": "/alerts",
+    "parameters": [
+      "deleted_at",
+      "id",
+      "query",
+      "severity",
+      "show_deleted",
+      "show_deleted_only",
+      "source",
+      "source_time_stamp",
+      "type",
+      "updated_at",
+      "created_at",
+      "category",
+      "planId",
+      "resourceId",
+      "planName",
+      "resourceName"
+    ]
+  }
+}
