@@ -1,0 +1,36 @@
+{
+  "name": "@scantitan/msp-bridge",
+  "version": "0.1.0",
+  "description": "ScanTitan finding and monitoring delivery for Acronis, HaloPSA and ConnectWise PSA",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "ScanTitan",
+    "email": "info@scantitan.com"
+  },
+  "homepage": "https://portal.scantitan.com/integrations/msp.html",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "bin": {
+    "scantitan-msp": "src/cli.mjs"
+  },
+  "files": [
+    "src",
+    "examples",
+    "contracts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "check": "node --check src/cli.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scantitan/scantitan-msp-bridge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/scantitan/scantitan-msp-bridge/issues"
+  }
+}

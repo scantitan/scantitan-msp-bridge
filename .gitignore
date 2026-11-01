@@ -1,0 +1,10 @@
+node_modules/
+.env*
+state/
+private/
+*.tmp
+*.lock
+*.pem
+*.key
+*.crt
+*.tgz
