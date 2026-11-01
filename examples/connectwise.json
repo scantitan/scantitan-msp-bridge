@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "provider": "connectwise",
+  "source": {"apiUrl": "https://portal.scantitan.com/api/v2/integrations/apps", "tokenEnv": "SCANTITAN_MSP_TOKEN"},
+  "target": {
+    "apiUrl": "https://connectwise.example.invalid/v4_6_release/apis/3.0",
+    "company": "REPLACE_WITH_COMPANY_CODE",
+    "clientIdEnv": "CONNECTWISE_CLIENT_ID",
+    "publicKeyEnv": "CONNECTWISE_PUBLIC_KEY",
+    "privateKeyEnv": "CONNECTWISE_PRIVATE_KEY",
+    "boardId": 0,
+    "openStatusId": 0,
+    "resolvedStatusId": 0,
+    "priorityIds": {"info": 0, "low": 0, "medium": 0, "high": 0, "critical": 0}
+  },
+  "mappings": [{"assetId": "REPLACE_WITH_SELECTED_WEBSITE_ID", "companyId": 0, "siteId": 0}],
+  "stateFile": "./private-state/connectwise.json",
+  "minimumSeverity": "medium",
+  "autoResolve": false
+}

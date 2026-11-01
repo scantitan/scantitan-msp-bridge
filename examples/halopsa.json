@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "provider": "halopsa",
+  "source": {"apiUrl": "https://portal.scantitan.com/api/v2/integrations/apps", "tokenEnv": "SCANTITAN_MSP_TOKEN"},
+  "target": {
+    "apiUrl": "https://halo.example.invalid/api",
+    "authUrl": "https://halo-auth.example.invalid/auth",
+    "clientIdEnv": "HALO_CLIENT_ID",
+    "clientSecretEnv": "HALO_CLIENT_SECRET",
+    "scope": "REPLACE_WITH_APPROVED_HALO_SCOPES",
+    "ticketTypeId": 0,
+    "openStatusId": 0,
+    "resolvedStatusId": 0,
+    "priorityIds": {"info": 0, "low": 0, "medium": 0, "high": 0, "critical": 0}
+  },
+  "mappings": [{"assetId": "REPLACE_WITH_SELECTED_WEBSITE_ID", "clientId": 0, "siteId": 0}],
+  "stateFile": "./private-state/halopsa.json",
+  "minimumSeverity": "medium",
+  "autoResolve": false
+}
